@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.celiachen.lecture0409.MainActivity">
+
+
+    <EditText
+        android:id="@+id/phone_number_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_contact_button"
+        android:layout_alignEnd="@+id/send_button"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:inputType="phone"
+        android:minLines="2"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/add_contact_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="38dp"
+        android:text="Contacts" />
+
+    <EditText
+        android:id="@+id/message_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone_number_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/edittextstyle"
+        android:ems="10"
+        android:maxLines="5"
+        android:minLines="5" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="Send SMS" />
+</RelativeLayout>
